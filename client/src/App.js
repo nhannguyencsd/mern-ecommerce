@@ -1,7 +1,7 @@
-import ContentLayout from './layouts/ContentLayout';
+import SidebarContentLayout from './layouts/SidebarContentLayout';
 
 function App() {
-    return <ContentLayout>Page</ContentLayout>;
+    return <SidebarContentLayout>Page</SidebarContentLayout>;
 }
 
 export default App;
