@@ -1,5 +1,7 @@
+import ContentLayout from './layouts/ContentLayout';
+
 function App() {
-    return;
+    return <ContentLayout>Page</ContentLayout>;
 }
 
 export default App;
