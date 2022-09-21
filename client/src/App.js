@@ -1,7 +1,12 @@
-import SidebarContentLayout from './layouts/SidebarContentLayout';
+import { BrowserRouter, Routes } from 'react-router-dom';
+import { publicRoutes } from './routes';
 
 function App() {
-    return <SidebarContentLayout>Page</SidebarContentLayout>;
+    return (
+        <BrowserRouter>
+            <Routes>{publicRoutes}</Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App;
