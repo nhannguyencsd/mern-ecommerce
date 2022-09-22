@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import ProtectedRoutes from './components/ProtectedRoutes';
-import { publicRoutes, userProtectedRoutes, adminProtectedRoutes } from './routes';
+import ProtectedRoutes from './routes/ProtectedRoutes';
+import { publicRoutes, userProtectedRoutes, adminProtectedRoutes } from './routes/createRoutes';
 
 function App() {
     return (
