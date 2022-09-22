@@ -16,6 +16,16 @@ import UserProfilePage from '../pages/user/UserProfilePage';
 import UserOrdersPage from '../pages/user/UserOrdersPage';
 import UserOrderDetailsPage from '../pages/user/UserOrderDetailsPage';
 import UserCartDetailsPage from '../pages/user/UserCartDetailsPage';
+// import admin pages
+import AdminUsersPage from '../pages/admin/AdminUsersPage';
+import AdminEditUserPage from '../pages/admin/AdminEditUserPage';
+import AdminProductsPage from '../pages/admin/AdminProductsPage';
+import AdminCreateProductPage from '../pages/admin/AdminCreateProductPage';
+import AdminEditProductPage from '../pages/admin/AdminEditProductPage';
+import AdminOrdersPage from '../pages/admin/AdminOrdersPage';
+import AdminOrderDetailsPage from '../pages/admin/AdminOrderDetailsPage';
+import AdminChatsPage from '../pages/admin/AdminChatsPage';
+import AdminAnalyticsPage from '../pages/admin/AdminAnalyticsPage';
 
 // routes config
 const publicRoutesConfig = [
@@ -33,6 +43,17 @@ const userProtectedRoutesConfig = [
     { path: '/user/orders', page: UserOrdersPage },
     { path: '/user/order-details', page: UserOrderDetailsPage },
     { path: '/user/cart-details', page: UserCartDetailsPage },
+];
+const adminProtectedRoutesConfig = [
+    { path: '/admin/users', page: AdminUsersPage },
+    { path: '/admin/edit-users', page: AdminEditUserPage },
+    { path: '/admin/products', page: AdminProductsPage },
+    { path: '/admin/create-new-product', page: AdminCreateProductPage },
+    { path: '/admin/edit-product', page: AdminEditProductPage },
+    { path: '/admin/orders', page: AdminOrdersPage },
+    { path: '/admin/order-details', page: AdminOrderDetailsPage },
+    { path: '/admin/chats', page: AdminChatsPage },
+    { path: '/admin/analytics', page: AdminAnalyticsPage },
 ];
 
 // create routes function
@@ -62,5 +83,6 @@ function createRoutes(routesConfig) {
 // routes
 const publicRoutes = createRoutes(publicRoutesConfig);
 const userProtectedRoutes = createRoutes(userProtectedRoutesConfig);
+const adminProtectedRoutes = createRoutes(adminProtectedRoutesConfig);
 
-export { publicRoutes, userProtectedRoutes };
+export { publicRoutes, userProtectedRoutes, adminProtectedRoutes };
