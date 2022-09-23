@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 // import layouts
 import ContentLayout from '../layouts/ContentLayout';
 import SidebarContentLayout from '../layouts/SidebarContentLayout';
+import AdminLayout from '../layouts/AdminLayout/AdminLayout';
 // import public pages
 import HomePage from '../pages/HomePage';
 import ProductListPage from '../pages/ProductListPage';
@@ -45,15 +46,15 @@ const userProtectedRoutesConfig = [
     { path: '/user/cart-details', page: UserCartDetailsPage },
 ];
 const adminProtectedRoutesConfig = [
-    { path: '/admin/users', page: AdminUsersPage },
-    { path: '/admin/edit-users', page: AdminEditUserPage },
-    { path: '/admin/products', page: AdminProductsPage },
-    { path: '/admin/create-new-product', page: AdminCreateProductPage },
-    { path: '/admin/edit-product', page: AdminEditProductPage },
-    { path: '/admin/orders', page: AdminOrdersPage },
-    { path: '/admin/order-details', page: AdminOrderDetailsPage },
-    { path: '/admin/chats', page: AdminChatsPage },
-    { path: '/admin/analytics', page: AdminAnalyticsPage },
+    { path: '/admin/users', page: AdminUsersPage, layout: AdminLayout },
+    { path: '/admin/edit-users', page: AdminEditUserPage, layout: AdminLayout },
+    { path: '/admin/products', page: AdminProductsPage, layout: AdminLayout },
+    { path: '/admin/create-new-product', page: AdminCreateProductPage, layout: AdminLayout },
+    { path: '/admin/edit-product', page: AdminEditProductPage, layout: AdminLayout },
+    { path: '/admin/orders', page: AdminOrdersPage, layout: AdminLayout },
+    { path: '/admin/order-details', page: AdminOrderDetailsPage, layout: AdminLayout },
+    { path: '/admin/chats', page: AdminChatsPage, layout: AdminLayout },
+    { path: '/admin/analytics', page: AdminAnalyticsPage, layout: AdminLayout },
 ];
 
 // create routes function
