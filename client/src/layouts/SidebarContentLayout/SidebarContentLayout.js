@@ -1,12 +1,13 @@
 import classNames from 'classnames/bind';
 import styles from './SidebarContentLayout.module.scss';
+import Header from '../../components/Header/Header';
 
 const cx = classNames.bind(styles);
 
 function SidebarContentLayout({ children }) {
     return (
         <>
-            <header>Header component</header>
+            <Header />
             <main className={cx('main')}>
                 <div className={cx('container')}>
                     <div>Sidebar component</div>
