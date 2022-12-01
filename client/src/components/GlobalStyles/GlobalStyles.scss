@@ -1,8 +1,19 @@
-// normalize
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 
+/* base css */
 :root {
-    --color-textPrimary: #000000;
+    --color-primary: #f3eff3;
+    --color-secondary: #21d4f4;
+    --color-textPrimary: #000;
+    --color-headerLinkIcon: brightness(0) saturate(100%); //black
+    --color-searchBox: #fff;
+    --color-searchBoxFocus: #dfdbdf;
+    --color-searchInput: #fff;
+    --color-searchBtnActive: #21d4f469;
+    --color-searchClearBtn: brightness(0) saturate(100%); //black
+    --color-searchSearchBtn: invert(87%) sepia(28%) saturate(6201%) hue-rotate(150deg) brightness(95%) contrast(102%); //light blue
+
+    --height-header: 88px;
 }
 
 *,
@@ -10,14 +21,13 @@
 *::after {
     padding: 0;
     margin: 0;
-    border: 0;
     box-sizing: inherit;
 }
 
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -33,5 +43,18 @@ li {
 
 a {
     text-decoration: none;
-    color: var(--color-textPrimary);
+}
+
+/* important commons */
+.ml-2 {
+    margin-left: 2px !important;
+}
+
+// grid system
+.grid {
+    display: block;
+    width: 1400px;
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto;
 }

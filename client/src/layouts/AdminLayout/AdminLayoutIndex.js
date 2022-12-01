@@ -1,15 +1,16 @@
 import classNames from 'classnames/bind';
-import styles from './ContentLayout.module.scss';
-import Header from '../../components/Header/Header';
+import styles from './AdminLayout.module.scss';
+import Header from '../../components/Header/HeaderIndex';
 
 const cx = classNames.bind(styles);
 
-function ContentLayout({ children }) {
+function AdminLayout({ children }) {
     return (
         <>
             <Header />
             <main className={cx('main')}>
                 <div className={cx('container')}>
+                    <div>Admin navabar component</div>
                     <div className={cx('page')}>{children}</div>
                 </div>
             </main>
@@ -18,4 +19,4 @@ function ContentLayout({ children }) {
     );
 }
 
-export default ContentLayout;
+export default AdminLayout;

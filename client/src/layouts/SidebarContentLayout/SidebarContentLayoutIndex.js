@@ -1,16 +1,16 @@
 import classNames from 'classnames/bind';
-import styles from './AdminLayout.module.scss';
-import Header from '../../components/Header/Header';
+import styles from './SidebarContentLayout.module.scss';
+import Header from '../../components/Header/HeaderIndex';
 
 const cx = classNames.bind(styles);
 
-function AdminLayout({ children }) {
+function SidebarContentLayout({ children }) {
     return (
         <>
-            <Header />
+            <Header badge="3" />
             <main className={cx('main')}>
                 <div className={cx('container')}>
-                    <div>Admin navabar component</div>
+                    <div>Sidebar component</div>
                     <div className={cx('page')}>{children}</div>
                 </div>
             </main>
@@ -19,4 +19,4 @@ function AdminLayout({ children }) {
     );
 }
 
-export default AdminLayout;
+export default SidebarContentLayout;

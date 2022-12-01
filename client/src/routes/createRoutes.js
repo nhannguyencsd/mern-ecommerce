@@ -1,9 +1,9 @@
 import { Fragment } from 'react';
 import { Route } from 'react-router-dom';
 // import layouts
-import ContentLayout from '../layouts/ContentLayout';
-import SidebarContentLayout from '../layouts/SidebarContentLayout';
-import AdminLayout from '../layouts/AdminLayout/AdminLayout';
+import ContentLayout from '../layouts/ContentLayout/ContentLayoutIndex';
+import SidebarContentLayout from '../layouts/SidebarContentLayout/SidebarContentLayoutIndex';
+import AdminLayout from '../layouts/AdminLayout/AdminLayoutIndex';
 // import public pages
 import HomePage from '../pages/HomePage';
 import ProductListPage from '../pages/ProductListPage';
