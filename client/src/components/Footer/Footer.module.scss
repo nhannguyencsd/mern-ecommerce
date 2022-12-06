@@ -1,0 +1,68 @@
+// wrapper
+.wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-primary);
+}
+
+//section
+.section {
+    padding-top: 40px;
+}
+
+//section logo
+.logo {
+    padding: 0 !important;
+    margin-top: -10px;
+    margin-bottom: 10px;
+
+    img {
+        width: 30px;
+        height: 36px;
+    }
+}
+
+.tagline {
+    margin-left: -2px;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--color-textPrimary);
+}
+
+//section heading
+.heading {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: var(--color-textPrimary);
+}
+
+// section list
+.list {
+    li {
+        margin-bottom: 8px;
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 2.2rem;
+    }
+
+    a {
+        transition: 0.3s ease;
+        color: var(--color-textTertiary);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+// copyright
+.copyright {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-textTertiary);
+}

@@ -5,6 +5,8 @@
     --color-primary: #f3eff3;
     --color-secondary: #21d4f4;
     --color-textPrimary: #000;
+    --color-textSecondary: #a9b3bb;
+    --color-textTertiary: #000;
     --color-headerLinkIcon: brightness(0) saturate(100%); //black
     --color-searchBox: #fff;
     --color-searchBoxFocus: #dfdbdf;
@@ -31,6 +33,7 @@ html {
 }
 
 body {
+    position: relative;
     line-height: 1.6;
     font-size: 1.6rem;
 }
@@ -57,4 +60,21 @@ a {
     max-width: 100%;
     padding: 0;
     margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+.col {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
 }
