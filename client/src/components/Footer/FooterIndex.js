@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 const cx = classNames.bind(styles);
 
 function Footer() {
-    console.log(styles);
     return (
         <footer className={cx('wrapper')}>
             <div className="grid">

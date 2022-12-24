@@ -7,6 +7,7 @@
     --color-textPrimary: #000;
     --color-textSecondary: #a9b3bb;
     --color-textTertiary: #000;
+    --color-background: #fbf7fb;
     --color-headerLinkIcon: brightness(0) saturate(100%); //black
     --color-searchBox: #fff;
     --color-searchBoxFocus: #dfdbdf;
@@ -30,12 +31,14 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 body {
     position: relative;
     line-height: 1.6;
     font-size: 1.6rem;
+    overflow-x: hidden;
 }
 
 ul,
@@ -56,9 +59,9 @@ a {
 // grid system
 .grid {
     display: block;
-    width: 1400px;
+    width: 1700px;
     max-width: 100%;
-    padding: 0;
+    padding: 0 20px;
     margin: 0 auto;
 }
 

@@ -9,11 +9,7 @@ function ContentLayout({ children }) {
     return (
         <>
             <Header badge="3" />
-            <main className={cx('main')}>
-                <div className={cx('container')}>
-                    <div className={cx('page')}>{children}</div>
-                </div>
-            </main>
+            <main className={cx('page')}>{children}</main>
             <Footer />
         </>
     );

@@ -5,7 +5,7 @@ import ContentLayout from '../layouts/ContentLayout/ContentLayoutIndex';
 import SidebarContentLayout from '../layouts/SidebarContentLayout/SidebarContentLayoutIndex';
 import AdminLayout from '../layouts/AdminLayout/AdminLayoutIndex';
 // import public pages
-import HomePage from '../pages/HomePage';
+import HomePage from '../pages/HomePage/HomePageIndex';
 import ProductListPage from '../pages/ProductListPage';
 import ProductDetailsPage from '../pages/ProductDetailsPage';
 import CartPage from '../pages/CartPage';
