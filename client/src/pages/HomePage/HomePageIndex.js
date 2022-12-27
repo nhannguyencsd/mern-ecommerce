@@ -1,15 +1,15 @@
 import classNames from 'classnames/bind';
 import ProductCarousel from '../../components/ProductCarousel/ProductCarouselIndex';
+import CategoryCard from '../../components/CategoryCard/CategoryCardIndex';
 import styles from './HomePage.module.scss';
 
-import { useRef } from 'react';
 const bestSellers = [
     {
         id: '0',
         gradient: ['rgb(0, 126, 254)', 'rgb(6, 195, 254)'],
         image: 'https://scalefusion.com/assets/new_layout_assets/sf-index-v3/devices@2x-810dbc6c77647e26122505f21edd0d9196f4be6aeea220c399c6bcd601ac161c.png',
         headline: 'Limited Time Special Offer',
-        desc: 'Save up to 50% on TVs, smartphones, smartwatches, cameras, headphones, tablets, and more',
+        desc: 'Save up to 50% on phones, smartphones, smartwatches, cameras, headphones, tablets, and more',
         action: 'Shop now',
     },
 
@@ -32,14 +32,56 @@ const bestSellers = [
     },
 ];
 
+const categories = [
+    {
+        image: require('../../assets/images/categories/phones.png'),
+        title: 'Phones',
+    },
+    {
+        image: require('../../assets/images/categories/phones.png'),
+        title: 'Phones',
+    },
+    {
+        image: require('../../assets/images/categories/phones.png'),
+        title: 'Phones',
+    },
+    {
+        image: require('../../assets/images/categories/phones.png'),
+        title: 'Phones',
+    },
+    {
+        image: require('../../assets/images/categories/phones.png'),
+        title: 'Phones',
+    },
+    {
+        image: require('../../assets/images/categories/phones.png'),
+        title: 'Phones',
+    },
+    {
+        image: require('../../assets/images/categories/phones.png'),
+        title: 'Phones',
+    },
+    {
+        image: require('../../assets/images/categories/phones.png'),
+        title: 'Phones',
+    },
+];
+
 const cx = classNames.bind(styles);
 
 function HomePage() {
-    const divRef = useRef();
     return (
-        <div ref={divRef} className={cx('wrapper')}>
+        <div className={cx('wrapper')}>
             <div className="grid">
                 <ProductCarousel slides={bestSellers} />
+                <div className={cx('categories')}>Categories</div>
+                <div className="row">
+                    {categories.map((category, index) => {
+                        return (
+                            <CategoryCard card={category} insertClassName=" col lg-distinct md-3 sm-3" key={index} />
+                        );
+                    })}
+                </div>
             </div>
         </div>
     );

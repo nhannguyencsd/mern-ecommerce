@@ -131,7 +131,7 @@
 }
 
 //Portrait tablet: 740px -> 1023px
-@media (max-width: 63.975em) {
+@media (min-width: 46.25em) and (max-width: 63.975em) {
     .wrapper {
         height: 400px;
     }
@@ -180,9 +180,9 @@
     }
 
     .content {
+        padding-left: 10px;
+        padding-right: 10px;
         .headline {
-            padding-top: 20px;
-            font-size: 2.3rem;
             text-align: center;
         }
 

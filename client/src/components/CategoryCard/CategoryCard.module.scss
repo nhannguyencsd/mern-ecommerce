@@ -1,0 +1,52 @@
+.wrapper {
+    padding-top: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 130px;
+    margin: 0 auto;
+    color: var(--color-textPrimary);
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+
+.image-cell {
+    display: flex;
+
+    img {
+        width: 100%;
+    }
+}
+
+.title {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    font-weight: 700;
+}
+
+// landscape tablet: 1024px -> 1204px
+@media (min-width: 64em) and (max-width: 75.25em) {
+}
+
+//Portrait tablet: 740px -> 1023px
+@media (min-width: 46.25em) and (max-width: 63.975em) {
+}
+
+// landscape and portrait mobile: -> 739px
+@media (max-width: 46.1875em) {
+    .image-cell {
+        flex-direction: column;
+    }
+
+    .title {
+        padding: 0;
+    }
+}
