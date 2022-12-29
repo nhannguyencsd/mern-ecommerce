@@ -7,6 +7,7 @@ const images = {
     close: require('./close.svg').default,
     caretRight: require('./caretRight.svg').default,
     caretLeft: require('./caretLeft.svg').default,
+    chatBubble: require('./chatBubble.svg').default,
 };
 
 export default images;

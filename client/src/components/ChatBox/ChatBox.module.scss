@@ -1,0 +1,65 @@
+.wrapper {
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    z-index: 1;
+}
+
+.chat-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    user-select: none;
+    background-color: #00baff;
+}
+
+// not checked: display comment icon and hide close icon
+.comment {
+    display: block;
+    height: 30px;
+    animation: commentAnimation 0.3s ease;
+}
+
+.close {
+    display: none;
+    height: 14px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+// checked: display close icon and hide comment icon
+#chatbox:checked ~ .chat-btn {
+    .close {
+        display: block;
+        animation: closeAnimation 0.1s ease-out;
+    }
+
+    .comment {
+        display: none;
+    }
+}
+
+#chatbox {
+    display: none;
+}
+
+@keyframes closeAnimation {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes commentAnimation {
+    from {
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
