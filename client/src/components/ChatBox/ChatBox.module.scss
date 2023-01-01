@@ -134,3 +134,69 @@
         height: 300px;
     }
 }
+
+/* input for chatbox */
+.input {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4rem;
+    min-height: 4rem;
+    max-height: 16rem;
+    padding-right: 50px;
+    padding-left: 16px;
+    padding-top: 0.8rem;
+    border: none;
+    border-top: 1px solid #e0e8ef;
+    border-bottom-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    margin-bottom: 0.8rem;
+    outline: none;
+    resize: none;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+
+    &::placeholder {
+        font-size: 1.7rem;
+        color: #888686;
+    }
+
+    &:not(:placeholder-shown) ~ .btn img {
+        width: 22px;
+        height: 22px;
+        filter: invert(47%) sepia(67%) saturate(6412%) hue-rotate(218deg) brightness(87%) contrast(98%);
+        transform: rotate(0);
+        transition: width 0.2s ease, height 0.2s ease;
+    }
+
+    // custom scrollbar input
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: #ccc;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: #aba9a9;
+    }
+}
+
+.btn {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    padding: 10px 16px 12px 16px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+
+    img {
+        transform: rotate(45deg);
+    }
+}
