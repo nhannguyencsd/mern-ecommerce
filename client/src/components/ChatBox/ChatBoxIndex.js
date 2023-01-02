@@ -28,9 +28,22 @@ function ChatBox() {
             </label>
             <div ref={contentRef} className={cx('content')}>
                 <div className={cx('header')}>
-                    <div>How can we help?</div>
+                    <div>Service Operator</div>
                 </div>
                 <div className={cx('form')}>
+                    <div className={cx('message')}>
+                        {Array.from({ length: 4 }).map((_, index) => (
+                            <div key={index}>
+                                <div className={cx('operator')}>
+                                    <img src={images.chatOperator} alt="chat operator icon" />
+                                    <div>Hi there, how can we help you today ?</div>
+                                </div>
+                                <div className={cx('customer')}>
+                                    <div>Hey, I would like to ask question about product ABC.</div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                     <textarea
                         className={cx('input')}
                         ref={textAreaRef}

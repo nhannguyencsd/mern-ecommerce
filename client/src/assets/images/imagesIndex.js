@@ -9,6 +9,7 @@ const images = {
     caretLeft: require('./caretLeft.svg').default,
     chatBubble: require('./chatBubble.svg').default,
     sendMesage: require('./sendMessage.svg').default,
+    chatOperator: require('./chatOperator.svg').default,
 };
 
 export default images;
