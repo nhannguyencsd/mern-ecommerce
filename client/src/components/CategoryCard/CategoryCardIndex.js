@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 function CategoryCard({ card, insertClassName }) {
     return (
         <div className={cx('wrapper') + insertClassName}>
-            <Link className={cx('content')} to="/">
+            <Link className={cx('content')} to="/product-list">
                 <div className={cx('image-cell')}>
                     <img src={card.image} alt="card" />
                 </div>

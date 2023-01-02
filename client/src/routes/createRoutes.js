@@ -6,7 +6,7 @@ import SidebarContentLayout from '../layouts/SidebarContentLayout/SidebarContent
 import AdminLayout from '../layouts/AdminLayout/AdminLayoutIndex';
 // import public pages
 import HomePage from '../pages/HomePage/HomePageIndex';
-import ProductListPage from '../pages/ProductListPage';
+import ProductListPage from '../pages/ProductListPage/ProductListPageIndex';
 import ProductDetailsPage from '../pages/ProductDetailsPage';
 import CartPage from '../pages/CartPage';
 import RegisterPage from '../pages/RegisterPage';
@@ -31,13 +31,13 @@ import AdminAnalyticsPage from '../pages/admin/AdminAnalyticsPage';
 // routes config
 const publicRoutesConfig = [
     { path: '/', page: HomePage },
-    { path: '/product-list', page: ProductListPage, layout: SidebarContentLayout },
+    { path: '/product-list', page: ProductListPage },
     { path: '/product-details', page: ProductDetailsPage },
     { path: '/product-details/:id', page: ProductDetailsPage },
     { path: '/cart', page: CartPage },
     { path: '/register', page: RegisterPage },
     { path: '/login', page: LoginPage },
-    { path: '*', page: NotFoundPage },
+    { path: '*', page: NotFoundPage, layout: SidebarContentLayout },
 ];
 const userProtectedRoutesConfig = [
     { path: '/user', page: UserProfilePage },
