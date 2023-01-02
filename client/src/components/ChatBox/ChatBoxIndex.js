@@ -25,6 +25,7 @@ function ChatBox() {
             <label className={cx('outlet')} onClick={handleActive} htmlFor={cx('chatbox')}>
                 <img className={cx('comment')} src={images.chatBubble} alt="chat icon" />
                 <img className={cx('close')} src={images.close} alt="close icon" />
+                <span className={cx('badge')}>2</span>
             </label>
             <div ref={contentRef} className={cx('content')}>
                 <div className={cx('header')}>

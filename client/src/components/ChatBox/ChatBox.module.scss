@@ -17,6 +17,18 @@
     user-select: none;
     -webkit-tap-highlight-color: transparent;
     background-color: #00baff;
+
+    .badge {
+        position: absolute;
+        top: -6px;
+        right: -4px;
+        padding: 3px 6px;
+        border-radius: 10px;
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        color: #fff;
+        background-color: #ff0000;
+    }
 }
 
 // not checked: display comment icon and hide close icon
@@ -109,8 +121,8 @@
 
 @keyframes grow {
     from {
-        width: 200px;
-        height: 300px;
+        width: 250px;
+        height: 350px;
         opacity: 0;
     }
 
