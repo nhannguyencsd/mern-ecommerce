@@ -35,22 +35,25 @@ function StarIcon({ index, rating, hoverRating, onClickRating, onHoverRating, on
     );
 }
 
-function StarRating() {
-    const [rating, setRating] = useState(0);
-    const [hoverRating, setHoverRating] = useState(0);
+function StarRating({ fixedValue }) {
+    const [rating, setRating] = useState(fixedValue ? fixedValue : 0);
+    const [hoverRating, setHoverRating] = useState(fixedValue ? fixedValue : 0);
 
     //handle clicking on star icon
     const onClickRating = (index) => {
-        setRating(index);
+        if (fixedValue) return;
+        else setRating(index);
     };
 
     //hanle hovering on star icon
     const onHoverRating = (index) => {
+        if (fixedValue) return;
         setHoverRating(index);
     };
 
     //handle leaving on star icon
     const onLeaveRating = () => {
+        if (fixedValue) return;
         setHoverRating(0);
     };
 
