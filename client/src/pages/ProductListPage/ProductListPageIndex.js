@@ -1,5 +1,6 @@
 import classNames from 'classnames/bind';
 import styles from './ProductListPage.module.scss';
+import StarRating from '../../components/StarRating/StarRatingIndex';
 
 const cx = classNames.bind(styles);
 
@@ -9,7 +10,7 @@ function ProductListPage() {
             <div className="grid">
                 <div className="row">
                     <div className="col lg-3">
-                        <div>filter component</div>
+                        <StarRating />
                         <div>filter component</div>
                         <div>filter component</div>
                     </div>
