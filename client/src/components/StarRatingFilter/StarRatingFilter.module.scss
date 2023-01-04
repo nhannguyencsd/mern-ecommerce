@@ -1,0 +1,52 @@
+.headline {
+    margin-bottom: 32px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+    font-size: 1.8rem; //size of checkbox;
+    -webkit-tap-highlight-color: transparent;
+
+    // checkbox
+    input {
+        display: grid;
+        place-content: center;
+        width: 1.15em;
+        height: 1.15em;
+        border: 2px solid #00baff;
+        border-radius: 0.3em;
+        margin: 0;
+        font: inherit;
+        cursor: pointer;
+        -webkit-appearance: none;
+        background-color: transparent;
+
+        // checkmark
+        &::before {
+            content: '';
+            width: 0.65em;
+            height: 0.65em;
+            clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+            transform: scale(0);
+            transition: 120ms transform ease-in-out;
+            background-color: #00baff;
+        }
+
+        &:checked::before {
+            transform: scale(1);
+        }
+
+        &:hover {
+            box-shadow: 0 0 0 0.3rem rgba(0, 186, 255, 0.25);
+        }
+    }
+
+    // star rating
+    label {
+        width: fit-content;
+    }
+}
