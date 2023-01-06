@@ -1,6 +1,7 @@
 import classNames from 'classnames/bind';
 import styles from './ProductListPage.module.scss';
 import StarRatingFilter from '../../components/StarRatingFilter/StarRatingFilterIndex';
+import SortOptions from '../../components/SortOptions/SortOptions';
 
 const cx = classNames.bind(styles);
 
@@ -12,9 +13,9 @@ function ProductListPage() {
                     <div className="col lg-3 sm-3">
                         <StarRatingFilter />
                         <div>filter component</div>
-                        <div>filter component</div>
                     </div>
                     <div className="col lg-9">
+                        <SortOptions />
                         <div className="row">
                             <div className="col lg-4">product card component</div>
                             <div className="col lg-4">product card component</div>

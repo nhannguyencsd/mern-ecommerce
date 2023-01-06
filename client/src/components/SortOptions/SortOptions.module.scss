@@ -1,0 +1,24 @@
+.wrapper {
+    display: flex;
+    padding: 8px 20px;
+    margin-bottom: 32px;
+    gap: 16px;
+    background-color: var(--color-primary);
+}
+
+.headline {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.options {
+    border: none;
+    cursor: pointer;
+
+    &::after {
+        content: '';
+        width: 0.8em;
+        height: 0.5em;
+        clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+    }
+}
