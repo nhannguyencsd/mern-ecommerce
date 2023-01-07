@@ -6,7 +6,7 @@ const cx = classNames.bind(styles);
 function PriceFilter() {
     return (
         <div className={cx('wrapper')}>
-            <div className={cx('headline')}>FILTER BY PRICE</div>
+            <h4 className={cx('headline')}>FILTER BY PRICE</h4>
             <input className={cx('range')} min="100" max="1000" step="10" type="range" />
             <label className={cx('amount')}>Price: $100 -$1000</label>
         </div>

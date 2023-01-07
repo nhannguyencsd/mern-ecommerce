@@ -6,7 +6,7 @@ const cx = classNames.bind(styles);
 
 function StarRatingFilter() {
     return (
-        <>
+        <div className={cx('wrapper')}>
             <h4 className={cx('headline')}>RATING</h4>
             {[0, 1, 2, 3, 4].map((index) => {
                 return (
@@ -18,7 +18,7 @@ function StarRatingFilter() {
                     </div>
                 );
             })}
-        </>
+        </div>
     );
 }
 

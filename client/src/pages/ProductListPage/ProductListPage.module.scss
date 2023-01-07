@@ -1,3 +1,7 @@
 .wrapper {
     margin-top: 100px;
 }
+
+.filter-item + .filter-item {
+    border-top: 1px solid #e4e4e4;
+}

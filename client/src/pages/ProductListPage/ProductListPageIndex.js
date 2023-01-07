@@ -3,6 +3,7 @@ import styles from './ProductListPage.module.scss';
 import StarRatingFilter from '../../components/StarRatingFilter/StarRatingFilterIndex';
 import SortOptions from '../../components/SortOptions/SortOptions';
 import PriceFilter from '../../components/PriceFilter/PriceFilterIndex';
+import CategoryFilter from '../../components/CategoryFilter/CategoryFilterIndex';
 
 const cx = classNames.bind(styles);
 
@@ -12,8 +13,15 @@ function ProductListPage() {
             <div className="grid">
                 <div className="row">
                     <div className="col lg-3 sm-3">
-                        <PriceFilter />
-                        <StarRatingFilter />
+                        <div className={cx('filter-item')}>
+                            <PriceFilter />
+                        </div>
+                        <div className={cx('filter-item')}>
+                            <StarRatingFilter />
+                        </div>
+                        <div className={cx('filter-item')}>
+                            <CategoryFilter />
+                        </div>
                     </div>
                     <div className="col lg-9">
                         <SortOptions />
