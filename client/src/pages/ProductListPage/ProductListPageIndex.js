@@ -4,6 +4,7 @@ import StarRatingFilter from '../../components/StarRatingFilter/StarRatingFilter
 import SortOptions from '../../components/SortOptions/SortOptions';
 import PriceFilter from '../../components/PriceFilter/PriceFilterIndex';
 import CategoryFilter from '../../components/CategoryFilter/CategoryFilterIndex';
+import AttributesFilter from '../../components/AttributesFilter/AttributesFilterIndex';
 
 const cx = classNames.bind(styles);
 
@@ -17,10 +18,13 @@ function ProductListPage() {
                             <PriceFilter />
                         </div>
                         <div className={cx('filter-item')}>
-                            <StarRatingFilter />
+                            <CategoryFilter />
                         </div>
                         <div className={cx('filter-item')}>
-                            <CategoryFilter />
+                            <AttributesFilter />
+                        </div>
+                        <div className={cx('filter-item')}>
+                            <StarRatingFilter />
                         </div>
                     </div>
                     <div className="col lg-9">
