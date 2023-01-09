@@ -26,6 +26,14 @@ function ProductListPage() {
                         <div className={cx('filter-item')}>
                             <StarRatingFilter />
                         </div>
+                        <div className={cx('filter-item')}>
+                            <button type="button" className={cx('btn-filter')}>
+                                Filter
+                            </button>
+                            <button type="button" className={cx('btn-reset-filter')}>
+                                Reset Filter
+                            </button>
+                        </div>
                     </div>
                     <div className="col lg-9">
                         <SortOptions />
