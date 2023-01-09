@@ -6,6 +6,7 @@ import PriceFilter from '../../components/PriceFilter/PriceFilterIndex';
 import CategoryFilter from '../../components/CategoryFilter/CategoryFilterIndex';
 import AttributesFilter from '../../components/AttributesFilter/AttributesFilterIndex';
 import ProductCard from '../../components/ProductCard/ProductCardIndex';
+import Pagination from '../../components/Pagination/PaginationIndex';
 
 const cx = classNames.bind(styles);
 
@@ -72,7 +73,9 @@ function ProductListPage() {
                         </div>
                     </div>
                     <div className="col lg-9">
+                        {/* sort */}
                         <SortOptions />
+                        {/* product list */}
                         <div className="row">
                             {products.map((product, index) => {
                                 return (
@@ -82,9 +85,10 @@ function ProductListPage() {
                                 );
                             })}
                         </div>
+                        {/* pagination */}
+                        <Pagination />
                     </div>
                 </div>
-                <div>pagination component</div>
             </div>
         </div>
     );
