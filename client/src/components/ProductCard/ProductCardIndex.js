@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 
 function ProductCard({ card }) {
     return (
-        <Link className={cx('content')} to="/product-detail">
+        <Link className={cx('content')} to="/product-details">
             <div className={cx('image-cell')}>
                 <img src={card.image} alt="product img" />
             </div>

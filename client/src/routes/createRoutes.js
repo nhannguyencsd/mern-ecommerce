@@ -7,7 +7,7 @@ import AdminLayout from '../layouts/AdminLayout/AdminLayoutIndex';
 // import public pages
 import HomePage from '../pages/HomePage/HomePageIndex';
 import ProductListPage from '../pages/ProductListPage/ProductListPageIndex';
-import ProductDetailsPage from '../pages/ProductDetailsPage';
+import ProductDetailsPage from '../pages/ProductDetailsPage/ProductDetailsPageIndex';
 import CartPage from '../pages/CartPage';
 import RegisterPage from '../pages/RegisterPage';
 import LoginPage from '../pages/LoginPage';
