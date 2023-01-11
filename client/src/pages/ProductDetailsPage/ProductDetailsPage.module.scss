@@ -1,0 +1,18 @@
+.wrapper {
+    margin-top: 80px;
+}
+.image-cell {
+    position: relative;
+    height: 400px;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: auto;
+        height: 400px;
+        border-radius: 8px;
+        box-shadow: 10px 6px 20px rgba(0, 0, 0, 0.1);
+        transform: translateX(-50%);
+    }
+}
