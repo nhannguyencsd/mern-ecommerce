@@ -1,5 +1,6 @@
 import classNames from 'classnames/bind';
 import styles from './ProductDetailsPage.module.scss';
+import StarRating from '../../components/StarRating/StarRatingIndex';
 
 const cx = classNames.bind(styles);
 
@@ -23,15 +24,19 @@ function ProductDetailsPage() {
         <div className={cx('wrapper')}>
             <div className="grid">
                 <div className="row">
-                    <div className="col lg-5">
+                    <div className="col lg-6">
                         <div className={cx('image-cell')}>
                             <img src={products[1].image} alt="product img" />
                         </div>
                     </div>
-
-                    <div className="col lg-7">
-                        product name, price, rating, description, quantity, add to cart, Specifications,shipping, return
-                        policy
+                    <div className="col lg-6">
+                        <div className={cx('product-name')}>{products[1].title}</div>
+                        <div className={cx('product-rating')}>
+                            <StarRating fixedValue={4} />
+                            <span>8 reviews</span>
+                        </div>
+                        <h4 className={cx('product-price')}>$699.99</h4>
+                        description, quantity, add to cart, Specifications,shipping, return policy
                     </div>
                 </div>
                 <div>reviews</div>
