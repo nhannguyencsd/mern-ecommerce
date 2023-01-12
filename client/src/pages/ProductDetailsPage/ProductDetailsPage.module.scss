@@ -1,6 +1,7 @@
 .wrapper {
     margin-top: 80px;
 }
+
 .image-cell {
     position: relative;
     img {
@@ -33,4 +34,9 @@
     font-size: 2.8rem;
     line-height: 2.8rem;
     font-weight: 700;
+}
+
+.product-description {
+    width: 600px;
+    margin-top: 16px;
 }

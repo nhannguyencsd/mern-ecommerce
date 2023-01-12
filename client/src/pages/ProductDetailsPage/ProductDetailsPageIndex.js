@@ -36,7 +36,13 @@ function ProductDetailsPage() {
                             <span>8 reviews</span>
                         </div>
                         <h4 className={cx('product-price')}>$699.99</h4>
-                        description, quantity, add to cart, Specifications,shipping, return policy
+                        <p className={cx('product-description')}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus tellus eget aliquet
+                            rutrum. Nunc et tellus turpis Sed neque eros, ornare at ipsum vitae, molestie dictum urna.
+                            Curabitur pharetra arcu luctus sem hendrerit, a tincidunt nibh semper. Sed enim orci,
+                            fermentum a eros ac, eleifend sodales sem. Maecenas pretium non metus quis dapibus. Duis
+                            sagittis elementum commodo. Aliquam egestas pellentesque aliquet.
+                        </p>
                     </div>
                 </div>
                 <div>reviews</div>
