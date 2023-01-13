@@ -1,0 +1,63 @@
+.wrapper {
+    position: relative;
+    margin-top: 30px;
+}
+
+.add-btn {
+    position: relative;
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.7rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    background-color: #fbb22d;
+
+    &:hover {
+        background-color: #f7a000;
+    }
+}
+
+.add-sign {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    display: none;
+    width: 50px;
+    height: fit-content;
+    border-radius: 8px;
+    transform: translateY(-50%);
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.subtract-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50px;
+    padding-bottom: 4px;
+    border: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-size: 4rem;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: #fbb22d;
+
+    &:hover {
+        background-color: #f7a000;
+    }
+}
+
+.add-btn:hover ~ .subtract-btn {
+    background-color: #fbb22d !important;
+}

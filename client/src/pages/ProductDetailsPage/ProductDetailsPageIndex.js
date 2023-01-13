@@ -1,6 +1,7 @@
 import classNames from 'classnames/bind';
 import styles from './ProductDetailsPage.module.scss';
 import StarRating from '../../components/StarRating/StarRatingIndex';
+import AddToCart from '../../components/AddToCart/AddToCartIndex';
 
 const cx = classNames.bind(styles);
 
@@ -43,6 +44,7 @@ function ProductDetailsPage() {
                             fermentum a eros ac, eleifend sodales sem. Maecenas pretium non metus quis dapibus. Duis
                             sagittis elementum commodo. Aliquam egestas pellentesque aliquet.
                         </p>
+                        <AddToCart />
                     </div>
                 </div>
                 <div>reviews</div>
