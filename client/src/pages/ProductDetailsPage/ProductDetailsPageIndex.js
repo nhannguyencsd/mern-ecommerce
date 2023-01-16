@@ -26,27 +26,58 @@ function ProductDetailsPage() {
         <div className={cx('wrapper')}>
             <div className="grid">
                 <div className="row">
+                    {/* main image */}
                     <div className="col lg-6">
                         <div className={cx('image-cell')}>
                             <img src={products[1].image} alt="product img" />
                         </div>
+                        {/* additional images */}
+                        <div className="row">
+                            <div className="col lg-6 md-12 sm-12">
+                                <div className={cx('image-cell')}>
+                                    <img src={products[1].image} alt="product img" />
+                                </div>
+                            </div>
+                            <div className="col lg-6 md-12 sm-12">
+                                <div className={cx('image-cell')}>
+                                    <img src={products[1].image} alt="product img" />
+                                </div>
+                            </div>
+                            <div className="col lg-6 md-12 sm-12">
+                                <div className={cx('image-cell')}>
+                                    <img src={products[1].image} alt="product img" />
+                                </div>
+                            </div>
+                            <div className="col lg-6 md-12 sm-12">
+                                <div className={cx('image-cell')}>
+                                    <img src={products[1].image} alt="product img" />
+                                </div>
+                            </div>
+                            <div className="col lg-6 md-12 sm-12">
+                                <div className={cx('image-cell')}>
+                                    <img src={products[1].image} alt="product img" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div className="col lg-6">
-                        <div className={cx('product-name')}>{products[1].title}</div>
-                        <div className={cx('product-rating')}>
-                            <StarRating fixedValue={4} />
-                            <span>8 reviews</span>
+                        <div className={cx('info')}>
+                            <div className={cx('product-name')}>{products[1].title}</div>
+                            <div className={cx('product-rating')}>
+                                <StarRating fixedValue={4} />
+                                <span>8 reviews</span>
+                            </div>
+                            <h4 className={cx('product-price')}>$699.99</h4>
+                            <p className={cx('product-description')}>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus tellus eget aliquet
+                                rutrum. Nunc et tellus turpis Sed neque eros, ornare at ipsum vitae, molestie dictum
+                                urna. Curabitur pharetra arcu luctus sem hendrerit, a tincidunt nibh semper. Sed enim
+                                orci, fermentum a eros ac, eleifend sodales sem. Maecenas pretium non metus quis
+                                dapibus. Duis sagittis elementum commodo. Aliquam egestas pellentesque aliquet.
+                            </p>
+                            <AddToCart />
+                            <ProductHeadline />
                         </div>
-                        <h4 className={cx('product-price')}>$699.99</h4>
-                        <p className={cx('product-description')}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus tellus eget aliquet
-                            rutrum. Nunc et tellus turpis Sed neque eros, ornare at ipsum vitae, molestie dictum urna.
-                            Curabitur pharetra arcu luctus sem hendrerit, a tincidunt nibh semper. Sed enim orci,
-                            fermentum a eros ac, eleifend sodales sem. Maecenas pretium non metus quis dapibus. Duis
-                            sagittis elementum commodo. Aliquam egestas pellentesque aliquet.
-                        </p>
-                        <AddToCart />
-                        <ProductHeadline />
                     </div>
                 </div>
                 <div>reviews</div>
