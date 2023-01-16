@@ -17,10 +17,10 @@ function ProductHeadline() {
                             viewBox="0 0 30 30"
                             xmlns="http://www.w3.org/2000/svg"
                             stroke="#000000"
-                            stroke-width="0.36999999999999996"
+                            strokeWidth="0.36999999999999996"
                         >
-                            <g stroke-width="0"></g>
-                            <g stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.06"></g>
+                            <g strokeWidth="0"></g>
+                            <g strokeLinecap="round" strokeLinejoin="round" stroke="#CCCCCC" strokeWidth="0.06"></g>
                             <g>
                                 <path d="M22.005 0c-.194-.002-.372.105-.458.276l-2.197 4.38-4.92.7c-.413.06-.578.56-.278.846l3.805 3.407-.953 4.81c-.07.406.363.715.733.523L22 12.67l4.286 2.273c.37.19.8-.118.732-.522l-.942-4.81 3.77-3.408c.3-.286.136-.787-.278-.846l-4.916-.7-2.2-4.38C22.368.11 22.195.002 22.005 0zM22 1.615l1.863 3.71c.073.148.216.25.38.273l4.168.595-3.227 2.89c-.12.112-.173.276-.145.436l.813 4.08-3.616-1.927c-.147-.076-.322-.076-.47 0l-3.59 1.926.823-4.08c.028-.16-.027-.325-.145-.438l-3.262-2.89 4.166-.594c.165-.023.307-.125.38-.272zM16.5 18c-.822 0-1.5.678-1.5 1.5v9c0 .822.678 1.5 1.5 1.5h9c.822 0 1.5-.678 1.5-1.5v-9c0-.822-.678-1.5-1.5-1.5zm0 1h9c.286 0 .5.214.5.5v9c0 .286-.214.5-.5.5h-9c-.286 0-.5-.214-.5-.5v-9c0-.286.214-.5.5-.5zM1.5 3C.678 3 0 3.678 0 4.5v9c0 .822.678 1.5 1.5 1.5h9c.822 0 1.5-.678 1.5-1.5v-9c0-.822-.678-1.5-1.5-1.5zm0 1h9c.286 0 .5.214.5.5v9c0 .286-.214.5-.5.5h-9c-.286 0-.5-.214-.5-.5v-9c0-.286.214-.5.5-.5zm0 14c-.822 0-1.5.678-1.5 1.5v9c0 .822.678 1.5 1.5 1.5h9c.822 0 1.5-.678 1.5-1.5v-9c0-.822-.678-1.5-1.5-1.5zm0 1h9c.286 0 .5.214.5.5v9c0 .286-.214.5-.5.5h-9c-.286 0-.5-.214-.5-.5v-9c0-.286.214-.5.5-.5z"></path>
                             </g>
@@ -55,10 +55,10 @@ function ProductHeadline() {
                             width="30px"
                             viewBox="0 0 477.3 477.3"
                             stroke="#000000"
-                            stroke-width="0.004773"
+                            strokeWidth="0.004773"
                         >
-                            <g stroke-width="0"></g>
-                            <g stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g strokeWidth="0"></g>
+                            <g strokeLinecap="round" strokeLinejoin="round"></g>
                             <g>
                                 {' '}
                                 <g>
@@ -98,23 +98,23 @@ function ProductHeadline() {
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                         >
-                            <g stroke-width="0"></g>
-                            <g stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g strokeWidth="0"></g>
+                            <g strokeLinecap="round" strokeLinejoin="round"></g>
                             <g>
                                 {' '}
                                 <path
                                     d="M12.9998 8L6 14L12.9998 21"
                                     stroke="#000000"
-                                    stroke-width="4"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
+                                    strokeWidth="4"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
                                 ></path>{' '}
                                 <path
                                     d="M6 14H28.9938C35.8768 14 41.7221 19.6204 41.9904 26.5C42.2739 33.7696 36.2671 40 28.9938 40H11.9984"
                                     stroke="#000000"
-                                    stroke-width="4"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
+                                    strokeWidth="4"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
                                 ></path>{' '}
                             </g>
                         </svg>
