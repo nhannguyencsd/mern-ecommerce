@@ -1,0 +1,39 @@
+.wrapper {
+    margin-top: 1rem;
+}
+
+.image-cell {
+    img {
+        max-width: 100%;
+        border-radius: 0.8rem;
+        box-shadow: 0.1rem 0.6rem 2rem rgba(0, 0, 0, 0.1);
+        aspect-ratio: 4 / 3;
+        object-fit: contain;
+    }
+}
+
+.thumbnail-cell {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.thumbnail {
+    display: inline-flex;
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid #bbb;
+    margin-right: 2rem;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+        border: 2px solid #333;
+        scale: 110%;
+    }
+
+    img {
+        object-fit: contain;
+        overflow: hidden;
+    }
+}

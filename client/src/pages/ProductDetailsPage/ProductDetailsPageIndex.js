@@ -3,21 +3,22 @@ import styles from './ProductDetailsPage.module.scss';
 import StarRating from '../../components/StarRating/StarRatingIndex';
 import AddToCart from '../../components/AddToCart/AddToCartIndex';
 import ProductHeadline from '../../components/ProductHeadline/ProductHeadlineIndex';
+import ProductGallery from '../../components/ProductGallery/ProductGalleryIndex';
 
 const cx = classNames.bind(styles);
 
-const products = [
+const productImages = [
     {
-        image: require('../../assets/images/products/window-10.png'),
-        title: 'Microsoft Windows 10 Pro 64-Bit Operating System Software',
-    },
-    {
-        image: require('../../assets/images/products/samsung-s22.png'),
+        src: require('../../assets/images/products/samsung-s22.png'),
         title: 'Samsung Galaxy S22 Ultra 5G (128GB, 8GB) 6.8" AMOLED 2X, 108MP Camera',
     },
     {
-        image: require('../../assets/images/products/window-10.png'),
-        title: 'Microsoft Windows 10 Pro 64-Bit Operating System Software',
+        src: require('../../assets/images/products/samsung-s22b.jpg'),
+        title: 'Samsung Galaxy S22 Ultra 5G (128GB, 8GB) 6.8" AMOLED 2X, 108MP Camera',
+    },
+    {
+        src: require('../../assets/images/products/samsung-s22c.png'),
+        title: 'Samsung Galaxy S22 Ultra 5G (128GB, 8GB) 6.8" AMOLED 2X, 108MP Camera',
     },
 ];
 
@@ -26,43 +27,14 @@ function ProductDetailsPage() {
         <div className={cx('wrapper')}>
             <div className="grid">
                 <div className="row">
-                    {/* main image */}
+                    {/* product gallery */}
                     <div className="col lg-6">
-                        <div className={cx('image-cell')}>
-                            <img src={products[1].image} alt="product img" />
-                        </div>
-                        {/* additional images */}
-                        <div className="row">
-                            <div className="col lg-6 md-12 sm-12">
-                                <div className={cx('image-cell')}>
-                                    <img src={products[1].image} alt="product img" />
-                                </div>
-                            </div>
-                            <div className="col lg-6 md-12 sm-12">
-                                <div className={cx('image-cell')}>
-                                    <img src={products[1].image} alt="product img" />
-                                </div>
-                            </div>
-                            <div className="col lg-6 md-12 sm-12">
-                                <div className={cx('image-cell')}>
-                                    <img src={products[1].image} alt="product img" />
-                                </div>
-                            </div>
-                            <div className="col lg-6 md-12 sm-12">
-                                <div className={cx('image-cell')}>
-                                    <img src={products[1].image} alt="product img" />
-                                </div>
-                            </div>
-                            <div className="col lg-6 md-12 sm-12">
-                                <div className={cx('image-cell')}>
-                                    <img src={products[1].image} alt="product img" />
-                                </div>
-                            </div>
-                        </div>
+                        <ProductGallery images={productImages} />
                     </div>
+                    {/* product info */}
                     <div className="col lg-6">
                         <div className={cx('info')}>
-                            <div className={cx('product-name')}>{products[1].title}</div>
+                            <div className={cx('product-name')}>{productImages[0].title}</div>
                             <div className={cx('product-rating')}>
                                 <StarRating fixedValue={4} />
                                 <span>8 reviews</span>
