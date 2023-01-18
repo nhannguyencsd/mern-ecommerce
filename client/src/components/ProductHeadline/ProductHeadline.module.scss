@@ -1,28 +1,18 @@
 .wrapper {
     width: 600px;
-    margin-top: 40px;
+    border-top: 1px solid #ececec;
 }
 
-details {
-    border-top: 1px solid#ececec;
-
-    &:last-child {
-        border-bottom: 1px solid#ececec;
-    }
-}
-
-summary {
-    padding: 16px 0;
-    line-height: 1;
-    list-style: none;
-    cursor: pointer;
-}
-
-.title {
+.collapsible {
     position: relative;
     display: flex;
     align-items: center;
     gap: 14px;
+    width: 100%;
+    padding: 16px 0;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
 
     h3 {
         font-weight: 600;
@@ -34,12 +24,8 @@ summary {
     }
 }
 
-details[open] summary .title .expand-icon {
-    transform: rotate(180deg);
-}
-
 .content {
-    margin: 0 10px;
-    margin-bottom: 16px;
-    word-break: break-word;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
 }
