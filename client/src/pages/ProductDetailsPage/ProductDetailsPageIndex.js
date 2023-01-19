@@ -28,11 +28,11 @@ function ProductDetailsPage() {
             <div className="grid">
                 <div className="row">
                     {/* product gallery */}
-                    <div className="col lg-6">
+                    <div className="col lg-5 md-5 sm-12">
                         <ProductGallery images={productImages} />
                     </div>
                     {/* product info */}
-                    <div className="col lg-6">
+                    <div className="col lg-7 md-7 sm-12">
                         <div className={cx('info')}>
                             <div className={cx('product-name')}>{productImages[0].title}</div>
                             <div className={cx('product-rating')}>
@@ -41,11 +41,11 @@ function ProductDetailsPage() {
                             </div>
                             <h4 className={cx('product-price')}>$699.99</h4>
                             <p className={cx('product-description')}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus tellus eget aliquet
-                                rutrum. Nunc et tellus turpis Sed neque eros, ornare at ipsum vitae, molestie dictum
-                                urna. Curabitur pharetra arcu luctus sem hendrerit, a tincidunt nibh semper. Sed enim
-                                orci, fermentum a eros ac, eleifend sodales sem. Maecenas pretium non metus quis
-                                dapibus. Duis sagittis elementum commodo. Aliquam egestas pellentesque aliquet.
+                                Product description lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus
+                                tellus eget aliquet rutrum. Nunc et tellus turpis Sed neque eros, ornare at ipsum vitae,
+                                molestie dictum urna. Curabitur pharetra arcu luctus sem hendrerit, a tincidunt nibh
+                                semper. Sed enim orci, fermentum a eros ac, eleifend sodales sem. Maecenas pretium non
+                                metus quis dapibus.
                             </p>
                             <AddToCart large margined />
                             <ProductHeadline
@@ -71,7 +71,7 @@ function ProductDetailsPage() {
                                         </g>
                                     </svg>
                                 }
-                                headline="Features"
+                                headline="Feature Specification"
                                 content="A new feature is nunc lectus eros, volutpat quis suscipit eu, lacinia et justo. Proin turpis mi,
                                 fermentum in feugiat et, sagittis sed nibh. Vivamus convallis felis tempor laoreet eleifend.
                                 Etiam leo dolor."

@@ -12,10 +12,22 @@
     }
 }
 
+// image-cell-medium is displayed in medium screen
+.image-cell-medium {
+    display: none;
+    img {
+        max-width: 100%;
+        border-radius: 0.8rem;
+        box-shadow: 0.1rem 0.6rem 2rem rgba(0, 0, 0, 0.1);
+        aspect-ratio: 4 / 3;
+        object-fit: contain;
+    }
+}
+
 .thumbnail-cell {
     display: flex;
     justify-content: center;
-    margin-top: 3rem;
+    margin: 3rem 0;
 }
 
 .thumbnail {
@@ -35,5 +47,18 @@
     img {
         object-fit: contain;
         overflow: hidden;
+    }
+}
+
+// medium screen
+@media (min-width: 46.25em) and (max-width: 63.975em) {
+    .image-cell,
+    .thumbnail-cell {
+        display: none;
+    }
+
+    .image-cell-medium {
+        display: block;
+        margin-bottom: 3rem;
     }
 }

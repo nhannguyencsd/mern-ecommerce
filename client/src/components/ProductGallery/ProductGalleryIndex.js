@@ -25,6 +25,12 @@ function ProductGallery({ images }) {
                     </div>
                 ))}
             </div>
+            {/* for medium responsive  */}
+            {images.map((image, index) => (
+                <div className={cx('image-cell-medium')} key={index}>
+                    <img src={image.src} alt="product img" />
+                </div>
+            ))}
         </div>
     );
 }
