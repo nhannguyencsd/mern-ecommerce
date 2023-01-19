@@ -1,16 +1,22 @@
 .wrapper {
     position: relative;
+    margin-top: 16px;
+}
+
+// wrapper margined
+.margined {
     margin-top: 30px;
     margin-bottom: 40px;
 }
 
+// normal button
 .add-btn {
     position: relative;
-    width: 250px;
-    height: 50px;
+    width: 100%;
+    height: 38px;
     border: none;
     border-radius: 8px;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s;
@@ -19,6 +25,13 @@
     &:hover {
         background-color: #f7a000;
     }
+}
+
+// large button
+.large {
+    width: 250px;
+    height: 50px;
+    font-size: 1.7rem;
 }
 
 .add-sign {

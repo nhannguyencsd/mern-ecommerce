@@ -47,7 +47,7 @@ function ProductDetailsPage() {
                                 orci, fermentum a eros ac, eleifend sodales sem. Maecenas pretium non metus quis
                                 dapibus. Duis sagittis elementum commodo. Aliquam egestas pellentesque aliquet.
                             </p>
-                            <AddToCart />
+                            <AddToCart large margined />
                             <ProductHeadline
                                 headlineIcon={
                                     <svg

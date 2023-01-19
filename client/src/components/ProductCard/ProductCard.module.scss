@@ -1,19 +1,19 @@
-.content {
+.wrapper {
     display: flex;
     flex-direction: column;
     border-radius: 16px;
-    padding: 32px;
-    margin-bottom: 32px;
+    padding: 18px;
+    // margin-bottom: 32px;
     background-color: var(--color-productBackground);
 }
 
 .image-cell {
     display: flex;
-    height: 180px;
 
     img {
         width: 100%;
         border-radius: 2px;
+        aspect-ratio: 4/3;
     }
 }
 
@@ -33,19 +33,4 @@
     margin-top: 10px;
     font-size: 1.5rem;
     color: #000;
-}
-
-.btn {
-    width: 100%;
-    height: 38px;
-    padding: 8px 10px;
-    border: none;
-    border-radius: 8px;
-    margin: 0 auto;
-    margin-top: 16px;
-    cursor: pointer;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #fff;
-    background-color: #007ffe;
 }

@@ -4,7 +4,7 @@ import styles from './AddToCart.module.scss';
 
 const cx = classNames.bind(styles);
 
-function AddToCart() {
+function AddToCart({ large = false, margined = false }) {
     const [itemCount, setItemCount] = useState(0);
     const addRef = useRef();
     const subtractRef = useRef();
@@ -26,8 +26,8 @@ function AddToCart() {
     };
 
     return (
-        <div className={cx('wrapper')}>
-            <button className={cx('add-btn')} onClick={handleAddItem}>
+        <div className={cx('wrapper', { margined })}>
+            <button className={cx('add-btn', { large })} onClick={handleAddItem}>
                 <span>{itemCount === 0 ? 'Add to cart' : `${itemCount} added`}</span>
                 <div className={cx('add-sign')} ref={addRef}>
                     +
