@@ -9,7 +9,6 @@ function ProductHeadline({ headlineIcon, headline, content }) {
     const expandIconRef = useRef();
 
     const handleCollapsible = () => {
-        console.log(contentRef.current.style.maxHeight);
         if (contentRef.current.style.maxHeight) {
             contentRef.current.style.maxHeight = null;
             expandIconRef.current.style.transform = 'rotate(0)';
