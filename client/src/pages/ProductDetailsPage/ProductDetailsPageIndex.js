@@ -4,6 +4,7 @@ import StarRating from '../../components/StarRating/StarRatingIndex';
 import AddToCart from '../../components/AddToCart/AddToCartIndex';
 import ProductHeadline from '../../components/ProductHeadline/ProductHeadlineIndex';
 import ProductGallery from '../../components/ProductGallery/ProductGalleryIndex';
+import ProductRecommendation from '../../components/ProductRecommendation/ProductRecommendationIndex';
 
 const cx = classNames.bind(styles);
 
@@ -26,6 +27,7 @@ function ProductDetailsPage() {
     return (
         <div className={cx('wrapper')}>
             <div className="grid">
+                {/* product detail */}
                 <div className="row">
                     {/* product gallery */}
                     <div className="col lg-5 md-5 sm-12">
@@ -141,6 +143,8 @@ function ProductDetailsPage() {
                         </div>
                     </div>
                 </div>
+                {/* product recommendation */}
+                <ProductRecommendation />
                 <div>reviews</div>
             </div>
         </div>
