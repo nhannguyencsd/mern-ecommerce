@@ -5,6 +5,7 @@ import AddToCart from '../../components/AddToCart/AddToCartIndex';
 import ProductHeadline from '../../components/ProductHeadline/ProductHeadlineIndex';
 import ProductGallery from '../../components/ProductGallery/ProductGalleryIndex';
 import ProductRecommendation from '../../components/ProductRecommendation/ProductRecommendationIndex';
+import CustomerReviews from '../../components/CustomerReviews/CustomerReviewsIndex';
 
 const cx = classNames.bind(styles);
 
@@ -145,7 +146,8 @@ function ProductDetailsPage() {
                 </div>
                 {/* product recommendation */}
                 <ProductRecommendation />
-                <div>reviews</div>
+                {/* customer reviews */}
+                <CustomerReviews />
             </div>
         </div>
     );

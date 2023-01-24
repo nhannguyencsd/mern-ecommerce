@@ -1,0 +1,27 @@
+.wrapper {
+    margin-top: 4rem;
+}
+
+.headline {
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: capitalize;
+}
+
+.rating-value-cell {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 2rem;
+    line-height: 1;
+
+    .rating-value {
+        margin-left: 8px;
+        font-weight: 600;
+    }
+}
+
+.rating-count {
+    font-weight: 600;
+    color: #666;
+}
