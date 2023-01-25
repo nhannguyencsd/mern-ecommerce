@@ -2,6 +2,7 @@ import classNames from 'classnames/bind';
 import styles from './CustomerReviews.module.scss';
 import StarRating from '../StarRating/StarRatingIndex';
 import WriteReview from './WriteReview/WriteReviewIndex';
+import ContentReview from './ContentReview/ContentReviewIndex';
 
 const cx = classNames.bind(styles);
 
@@ -15,6 +16,7 @@ function CustomerReviews() {
             </div>
             <div className={cx('rating-count')}>Based on 18 Reviews</div>
             <WriteReview />
+            <ContentReview />
         </div>
     );
 }
