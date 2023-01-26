@@ -43,7 +43,7 @@ function WriteReview() {
                     <label htmlFor="review-body-lbl" className={cx('review-body-lbl')}>
                         How was your overall experience?
                     </label>
-                    <textarea className={cx('review-body-txt')} id="review-body-lbl" rows={5} required></textarea>
+                    <textarea className={cx('review-body-txt')} id="review-body-lbl" rows={8} required></textarea>
                     {/* review buttons */}
                     <div className={cx('btn-cell')}>
                         <button className={cx('cancel-btn')} ref={cancelBtnRef} onClick={handleCancelWriteReview}>

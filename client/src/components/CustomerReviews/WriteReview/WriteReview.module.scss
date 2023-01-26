@@ -33,7 +33,7 @@
 .review-frm {
     display: flex;
     flex-direction: column;
-    width: 1000px;
+    width: 1200px;
     max-width: 100%;
     padding: 2rem 2.5rem;
     border-radius: 4px;
@@ -76,13 +76,12 @@
     .review-body-txt {
         width: 100% !important;
         max-width: 100%;
-        min-height: 34px;
         border: 1px solid #ccc;
         border-radius: 4px;
         padding: 4px 8px;
         margin-top: 1rem;
         font-size: 1.7rem;
-        resize: vertical;
+        resize: none;
 
         &:focus {
             outline: 0.2rem solid transparent;
