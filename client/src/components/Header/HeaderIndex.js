@@ -37,7 +37,7 @@ function Header({ badge }) {
                         <Button to="signin" leftIcon={images.user} rightIcon={images.caretDown} rounded>
                             Sign In
                         </Button>
-                        <Button to="cart" leftIcon={images.cart} rounded badge={badge}></Button>
+                        <Button to="/cart" leftIcon={images.cart} rounded badge={badge}></Button>
                     </div>
                 </div>
             </div>
