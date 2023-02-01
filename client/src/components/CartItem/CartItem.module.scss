@@ -1,3 +1,145 @@
 .wrapper {
-    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 32px;
+    box-shadow: 1px 6px 40px rgb(0 0 0 / 10%);
+}
+
+// item cell
+.info-cell {
+    display: flex;
+}
+
+// item image
+.info-image {
+    img {
+        display: block;
+        width: 200px;
+        height: 200px;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+}
+
+// item text
+.info-txt {
+    flex-basis: 100%;
+    margin-left: 30px;
+    margin-right: 60px;
+
+    .info-txt-title {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #000;
+    }
+
+    .info-txt-options {
+        margin-top: 10px;
+        font-size: 1.4rem;
+        color: #858585;
+
+        strong {
+            margin-left: 10px;
+            font-weight: 600;
+            color: #000;
+        }
+    }
+}
+
+// item value
+.value {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    .price {
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+
+    .quantity {
+        width: 50px;
+        height: 32px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        text-align: center;
+        outline: 0.2rem solid transparent;
+
+        &:focus {
+            outline-offset: 0.3rem;
+            box-shadow: 0 0 0 0.3rem rgb(255 255 255), 0 0 0.5rem 0.4rem rgb(15 15 15 / 30%);
+        }
+    }
+
+    .btn-remove {
+        display: flex;
+        align-items: flex-end;
+        gap: 2px;
+        padding: 6px;
+        border: 1px solid #888;
+        border-radius: 4px;
+        font-size: 1.1rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 0.2s background-color;
+        color: #000;
+        background-color: #fff;
+
+        &:hover {
+            background-color: #ccc;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .wrapper {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .info-image {
+        img {
+            width: 120px;
+            height: 120px;
+        }
+    }
+
+    .info-txt {
+        margin-left: 20px;
+        margin-right: 0;
+    }
+
+    .value {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 20px;
+    }
+}
+
+// iphone 5
+@media (max-width: 375px) {
+    .wrapper {
+        padding: 10px;
+    }
+
+    .info-image img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .info-txt .info-txt-title {
+        font-size: 1.6rem;
+    }
+
+    .info-txt-options strong {
+        font-size: 1.3rem;
+    }
+
+    .value .btn-remove {
+        // height: 3;
+        padding: 8px;
+    }
 }
