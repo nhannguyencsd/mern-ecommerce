@@ -9,7 +9,7 @@ import HomePage from '../pages/HomePage/HomePageIndex';
 import ProductListPage from '../pages/ProductListPage/ProductListPageIndex';
 import ProductDetailsPage from '../pages/ProductDetailsPage/ProductDetailsPageIndex';
 import CartPage from '../pages/CartPage/CartPage';
-import RegisterPage from '../pages/RegisterPage';
+import RegisterPage from '../pages/RegisterPage/RegisterPageIndex';
 import LoginPage from '../pages/LoginPage';
 import NotFoundPage from '../pages/NotFoundPage';
 // import user pages
