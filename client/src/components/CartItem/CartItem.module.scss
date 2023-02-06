@@ -69,8 +69,8 @@
         outline: 0.2rem solid transparent;
 
         &:focus {
-            outline-offset: 0.3rem;
-            box-shadow: 0 0 0 0.3rem rgb(255 255 255), 0 0 0.5rem 0.4rem rgb(15 15 15 / 30%);
+            border-color: #0b67f180;
+            box-shadow: 0 0 3px 0 rgb(63 137 225 / 50%);
         }
     }
 

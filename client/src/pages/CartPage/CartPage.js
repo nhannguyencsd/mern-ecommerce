@@ -1,6 +1,7 @@
 import classNames from 'classnames/bind';
 import styles from './CartPage.module.scss';
 import CartItem from '../../components/CartItem/CartItemIndex';
+import CartSummary from '../../components/CartSummary/CartSummaryIndex';
 
 const cx = classNames.bind(styles);
 
@@ -50,7 +51,7 @@ function CartPage() {
                     </div>
                     {/* cart summary */}
                     <div className="col lg-4 md-12 sm-12">
-                        <h2 className={cx('headline')}>Summary</h2>
+                        <CartSummary />
                     </div>
                 </div>
             </div>
