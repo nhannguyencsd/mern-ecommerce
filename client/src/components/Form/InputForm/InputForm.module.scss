@@ -1,0 +1,74 @@
+// wrapper
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+}
+
+// input
+.input {
+    height: 40px;
+    padding: 12px 2px 0px 0;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    font-size: 1.6rem;
+}
+
+// floating label of input
+.floating-label {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    -webkit-transition: 0.3s ease all;
+    transition: 0.2s ease all;
+    pointer-events: none;
+    color: gray;
+}
+
+// error of an input
+.error {
+    display: none;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: -12px;
+    color: #ff5e00;
+}
+
+// for floating label
+input:not(:placeholder-shown) ~ .floating-label,
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label {
+    top: 6px;
+    font-size: 11px;
+}
+
+// for error
+.input:invalid[focused='true'] {
+    border-bottom: 1px solid #ff5e00;
+}
+
+.input:invalid[focused='true'] ~ .error {
+    display: block;
+}
+
+// media
+@media (max-width: 850px) {
+    .wrapper {
+        width: 320px;
+    }
+}
+
+// media: iphone 5
+@media (max-width: 320px) {
+    .wrapper {
+        width: 260px;
+    }
+
+    .input {
+        height: 38px;
+    }
+}

@@ -34,7 +34,7 @@ function Header({ badge }) {
                     </form>
                     {/* right links */}
                     <div className={cx('links')}>
-                        <Button to="signin" leftIcon={images.user} rightIcon={images.caretDown} rounded>
+                        <Button to="/register" leftIcon={images.user} rightIcon={images.caretDown} rounded>
                             Sign In
                         </Button>
                         <Button to="/cart" leftIcon={images.cart} rounded badge={badge}></Button>

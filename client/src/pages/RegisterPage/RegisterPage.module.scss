@@ -1,3 +1,15 @@
+// wrapper
 .wrapper {
-    margin-top: 40px;
+    min-height: 100vh;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+    background: linear-gradient(65deg, #e6e9f1 0%, #e4dee7 23%, rgb(205, 214, 226) 57%, #dbe9f2 90%, #e6e9f1 100%);
+}
+
+// media
+@media (max-width: 850px) {
+    .wrapper {
+        padding-top: 1vh;
+        background: #fff;
+    }
 }

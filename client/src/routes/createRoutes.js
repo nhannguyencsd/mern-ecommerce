@@ -35,7 +35,7 @@ const publicRoutesConfig = [
     { path: '/product-details', page: ProductDetailsPage },
     { path: '/product-details/:id', page: ProductDetailsPage },
     { path: '/cart', page: CartPage },
-    { path: '/register', page: RegisterPage },
+    { path: '/register', page: RegisterPage, layout: null },
     { path: '/login', page: LoginPage },
     { path: '*', page: NotFoundPage, layout: SidebarContentLayout },
 ];
