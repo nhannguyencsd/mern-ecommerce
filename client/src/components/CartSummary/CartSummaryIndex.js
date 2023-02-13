@@ -54,9 +54,7 @@ function CartSummary() {
                 <div className={cx('btn-divider')}>OR</div>
                 <button className={cx('btn-paypal-checkout')}>
                     <img src={require('../../assets/images/brands/paypal.png')} alt="PayPal Checkout"></img>
-                    <span class="paypal-button-text true" optional="" data-v-44bf4aee="">
-                        Checkout
-                    </span>
+                    <span>Checkout</span>
                 </button>
             </div>
         </div>
