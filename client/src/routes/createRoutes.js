@@ -10,7 +10,7 @@ import ProductListPage from '../pages/ProductListPage/ProductListPageIndex';
 import ProductDetailsPage from '../pages/ProductDetailsPage/ProductDetailsPageIndex';
 import CartPage from '../pages/CartPage/CartPage';
 import RegisterPage from '../pages/RegisterPage/RegisterPageIndex';
-import LoginPage from '../pages/LoginPage';
+import LoginPage from '../pages/LoginPage/LoginPageIndex';
 import NotFoundPage from '../pages/NotFoundPage';
 // import user pages
 import UserProfilePage from '../pages/user/UserProfilePage';
@@ -36,7 +36,7 @@ const publicRoutesConfig = [
     { path: '/product-details/:id', page: ProductDetailsPage },
     { path: '/cart', page: CartPage },
     { path: '/register', page: RegisterPage, layout: null },
-    { path: '/login', page: LoginPage },
+    { path: '/login', page: LoginPage, layout: null },
     { path: '*', page: NotFoundPage, layout: SidebarContentLayout },
 ];
 const userProtectedRoutesConfig = [

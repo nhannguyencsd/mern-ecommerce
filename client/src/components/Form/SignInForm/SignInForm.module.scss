@@ -1,0 +1,160 @@
+// wrapper
+.wrapper {
+    width: fit-content;
+    padding: 40px;
+    border-radius: 20px;
+    margin: 0 auto;
+    box-shadow: 0.1rem 0.6rem 2rem rgb(5 5 5 / 20%);
+    background-color: #fff;
+}
+
+// logo
+.logo {
+    padding: 0;
+
+    img {
+        width: 30px;
+        height: 36px;
+    }
+
+    .tagline {
+        margin-left: -2px;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+}
+
+// title
+.title {
+    margin-top: 4px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #3a3a3a;
+
+    a {
+        cursor: pointer;
+        color: #043afe;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 6px;
+    cursor: pointer;
+    color: #043afe;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// sign in button
+.btn-sign-in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 46px;
+    padding: 20px 40px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 36px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Open Sans';
+    cursor: pointer;
+    color: white;
+    background-color: #043afe;
+
+    &:hover {
+        background-color: #0533dc;
+    }
+}
+
+// divider
+.divider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    .divider-or {
+        padding: 15px;
+        font-size: 1.2rem;
+        z-index: 1;
+        color: #888;
+        background-color: white;
+    }
+
+    .divider-line {
+        position: absolute;
+        top: 48%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #ececec;
+    }
+}
+
+// sign in with google
+.btn-sign-in-google {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: 'Open Sans';
+    cursor: pointer;
+    color: #000;
+    background-color: #fff;
+
+    &:hover {
+        color: #043afe;
+        border-color: #043afe;
+    }
+
+    img {
+        height: 20px;
+    }
+
+    span {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+}
+
+// media
+@media (max-width: 850px) {
+    // wrapper part
+    .wrapper {
+        padding: 0;
+        box-shadow: none;
+    }
+
+    // sign in with google part
+    .btn-sign-in-google {
+        margin-bottom: 20px;
+    }
+}
+
+// media: iphone 5
+@media (max-width: 320px) {
+    .btn-sign-in {
+        height: 40px;
+        margin-top: 26px;
+    }
+
+    .divider-or {
+        padding: 10px !important;
+    }
+
+    .btn-sign-in-google {
+        padding: 8px;
+    }
+}
