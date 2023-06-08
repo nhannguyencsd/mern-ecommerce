@@ -13,7 +13,7 @@ import RegisterPage from '../pages/RegisterPage/RegisterPageIndex';
 import LoginPage from '../pages/LoginPage/LoginPageIndex';
 import NotFoundPage from '../pages/NotFoundPage';
 // import user pages
-import UserProfilePage from '../pages/user/UserProfilePage';
+import UserProfilePage from '../pages/user/UserProfilePage/UserProfilePageIndex';
 import UserOrdersPage from '../pages/user/UserOrdersPage';
 import UserOrderDetailsPage from '../pages/user/UserOrderDetailsPage';
 import UserCartDetailsPage from '../pages/user/UserCartDetailsPage';

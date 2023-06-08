@@ -1,0 +1,27 @@
+// wrapper
+.wrapper {
+    margin-top: 40px;
+}
+
+// update button
+.btn-update {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    padding: 20px 40px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 40px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Open Sans';
+    cursor: pointer;
+    color: white;
+    background-color: #043afe;
+
+    &:hover {
+        background-color: #0533dc;
+    }
+}

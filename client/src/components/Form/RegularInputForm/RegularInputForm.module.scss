@@ -1,0 +1,42 @@
+// wrapper
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+}
+
+// // floating label of input
+// .floating-label {
+//     position: absolute;
+//     left: 0;
+//     top: 20px;
+//     -webkit-transition: 0.3s ease all;
+//     transition: 0.2s ease all;
+//     pointer-events: none;
+//     color: gray;
+// }
+
+// input
+.input {
+    height: 40px;
+    padding: 2px;
+    margin: 10px 2px;
+    border: 1px solid rgb(199, 196, 196);
+    border-radius: 4px;
+    outline: none;
+    font-size: 1.6rem;
+}
+
+// error of an input
+.error {
+    display: none;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: -12px;
+    color: #ff5e00;
+}
+
+.input:invalid[focused='true'] ~ .error {
+    display: block;
+}
