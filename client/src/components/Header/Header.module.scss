@@ -52,6 +52,29 @@
     filter: var(--color-headerLinkIcon);
 }
 
+.menu {
+    display: inline-block;
+    position: relative;
+    padding: 0 24px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.menu:hover .submenu {
+    display: block;
+    position: relative;
+}
+
+.submenu-item:hover {
+    color: #fff;
+    background-color: blue;
+}
+
 // search
 .search {
     display: flex;

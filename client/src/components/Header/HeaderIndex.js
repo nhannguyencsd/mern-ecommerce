@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
 import images from '../../assets/images/imagesIndex';
@@ -65,6 +66,21 @@ function Header({ badge }) {
                     </form>
                     {/* right links */}
                     <div className={cx('links')}>
+                        <div className={cx('menu')}>
+                            <Link to="/">John Doe</Link>
+                            <ul className={cx('submenu')}>
+                                <li className={cx('submenu-item')}>
+                                    <Link to="/user/my-orders">My orders</Link>
+                                </li>
+                                <li className={cx('submenu-item')}>
+                                    <Link to="/">My profiles</Link>
+                                </li>
+                                <li className={cx('submenu-item')}>
+                                    <Link to="/">Logout</Link>
+                                </li>
+                            </ul>
+                        </div>
+
                         <Button
                             leftIcon={images.user}
                             rightIcon={images.caretDown}
