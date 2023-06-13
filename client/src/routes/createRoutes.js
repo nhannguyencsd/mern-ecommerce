@@ -23,7 +23,7 @@ import AdminEditUserPage from '../pages/admin/AdminEditUserPage';
 import AdminProductsPage from '../pages/admin/AdminProductsPage';
 import AdminCreateProductPage from '../pages/admin/AdminCreateProductPage';
 import AdminEditProductPage from '../pages/admin/AdminEditProductPage';
-import AdminOrdersPage from '../pages/admin/AdminOrdersPage';
+import AdminOrdersPage from '../pages/admin/AdminOrdersPage/AdminOrdersPageIndex';
 import AdminOrderDetailsPage from '../pages/admin/AdminOrderDetailsPage';
 import AdminChatsPage from '../pages/admin/AdminChatsPage';
 import AdminAnalyticsPage from '../pages/admin/AdminAnalyticsPage';
