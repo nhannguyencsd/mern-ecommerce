@@ -1,5 +1,6 @@
 import classNames from 'classnames/bind';
 import { useState, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import styles from './CartSummary.module.scss';
 
 const cx = classNames.bind(styles);
@@ -50,12 +51,14 @@ function CartSummary() {
                 <div className={cx('total-price')}>
                     Est. Total: <span>$9999.99</span>
                 </div>
-                <button className={cx('btn-checkout')}>SECURE CHECKOUT</button>
-                <div className={cx('btn-divider')}>OR</div>
+                <Link className={cx('btn-checkout')} to="/user/cart-details">
+                    START CHECKOUT
+                </Link>
+                {/* <div className={cx('btn-divider')}>OR</div>
                 <button className={cx('btn-paypal-checkout')}>
                     <img src={require('../../assets/images/brands/paypal.png')} alt="PayPal Checkout"></img>
                     <span>Checkout</span>
-                </button>
+                </button> */}
             </div>
         </div>
     );
