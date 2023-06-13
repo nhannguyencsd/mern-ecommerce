@@ -15,7 +15,7 @@ import NotFoundPage from '../pages/NotFoundPage';
 // import user pages
 import UserProfilePage from '../pages/user/UserProfilePage/UserProfilePageIndex';
 import UserOrdersPage from '../pages/user/UserOrdersPage/UserOrdersPageIndex';
-import UserOrderDetailsPage from '../pages/user/UserOrderDetailsPage';
+import UserOrderDetailsPage from '../pages/user/UserOrderDetailsPage/UserOrderDetailsPageIndex';
 import UserCartDetailsPage from '../pages/user/UserCartDetailsPage';
 // import admin pages
 import AdminUsersPage from '../pages/admin/AdminUsersPage';

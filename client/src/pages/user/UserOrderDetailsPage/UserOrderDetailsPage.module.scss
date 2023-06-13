@@ -1,0 +1,26 @@
+.wrapper {
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+.shipping-status {
+    padding: 10px;
+    color: #952630;
+    background-color: #f5c8cc;
+}
+.payment-status {
+    padding: 10px;
+    color: #13653e;
+    background-color: #cde7db;
+}
+
+.pay {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(224, 85, 39);
+}
