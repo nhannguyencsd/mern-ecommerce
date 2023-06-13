@@ -14,7 +14,7 @@ import LoginPage from '../pages/LoginPage/LoginPageIndex';
 import NotFoundPage from '../pages/NotFoundPage';
 // import user pages
 import UserProfilePage from '../pages/user/UserProfilePage/UserProfilePageIndex';
-import UserOrdersPage from '../pages/user/UserOrdersPage';
+import UserOrdersPage from '../pages/user/UserOrdersPage/UserOrdersPageIndex';
 import UserOrderDetailsPage from '../pages/user/UserOrderDetailsPage';
 import UserCartDetailsPage from '../pages/user/UserCartDetailsPage';
 // import admin pages
@@ -41,7 +41,7 @@ const publicRoutesConfig = [
 ];
 const userProtectedRoutesConfig = [
     { path: '/user', page: UserProfilePage },
-    { path: '/user/orders', page: UserOrdersPage },
+    { path: '/user/my-orders', page: UserOrdersPage },
     { path: '/user/order-details', page: UserOrderDetailsPage },
     { path: '/user/cart-details', page: UserCartDetailsPage },
 ];
