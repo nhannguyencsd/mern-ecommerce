@@ -66,6 +66,7 @@ function Header({ badge }) {
                     </form>
                     {/* right links */}
                     <div className={cx('links')}>
+                        <Link to="/admin/orders">Admin</Link>
                         <div className={cx('menu')}>
                             <Link to="/">John Doe</Link>
                             <ul className={cx('submenu')}>
